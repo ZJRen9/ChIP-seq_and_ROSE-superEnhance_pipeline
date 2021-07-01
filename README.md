@@ -44,7 +44,9 @@
 *bedSort file_chip.bam.sorted.rmdup.bed file_chip.bam.sorted.rmdup.bed.sorted
 
 *bedtools coverage -a file_peaks.select.clean.bed -b file_chip.bam.sorted.rmdup.bed.sorted >> file_peaks.select.clean.bed.chip
+
 *python RPKM_count.py file_peaks.select.clean.bed.chip file_chip.tatal_read_counts file_peaks.select.clean.bed >> file_peaks.select.clean.bed.chip.RPKM
+
 *awk '$5 >4 {print $1"\t"$2"\t"$3"\t"$4}' file_peaks.select.clean.bed.chip.RPKM >> file_peaks.select.clean.HQ.bed
 
 # step6:Super-Enhance calling
