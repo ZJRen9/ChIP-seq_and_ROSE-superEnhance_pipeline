@@ -1,9 +1,9 @@
 # ChIP-seq_and_ROSE-superEnhance_pipeline
 
 # step1:mapping
-*bowtie2-align-s -p 6 --no-mixed --no-discordant --no-unal -x mm10.genome -1 file_chip_R1.fastq -2 file_chip_R2.fastq -S file_chip.sam
+bowtie2-align-s -p 6 --no-mixed --no-discordant --no-unal -x mm10.genome -1 file_chip_R1.fastq -2 file_chip_R2.fastq -S file_chip.sam
 
-*bowtie2-align-s -p 6 --no-mixed --no-discordant --no-unal -x mm10.genome -1 file_input_R1.fastq -2 file_input_R2.fastq -S file_input.sam
+bowtie2-align-s -p 6 --no-mixed --no-discordant --no-unal -x mm10.genome -1 file_input_R1.fastq -2 file_input_R2.fastq -S file_input.sam
 
 # step2:mapping quality cut off and duplicate remove
 samtools view -h -b -q 30 file_chip.sam >> file_chip.bam
