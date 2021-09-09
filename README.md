@@ -57,4 +57,4 @@ step7:Super-Enhance annotation
     /usr/bin/python ROSE_geneMapper.py -g MM10 -i file_Super/file_peak.select.clean.HQ_SuperEnhancers.table.txt -o file_peak.select.clean.HQ_SuperEnhancers.annotation
 step8:Most suitable genen select
 ---
-python suitable_annotation_gene_select.py file_peak.select.clean.HQ_SuperEnhancers.annotate gene_exp.txt >> file_peak.select.clean.HQ_SuperEnhancers.annotate.suitable
+    python suitable_annotation_gene_select.py file_peak.select.clean.HQ_SuperEnhancers.annotate gene_exp.txt >> file_peak.select.clean.HQ_SuperEnhancers.annotate.suitable
