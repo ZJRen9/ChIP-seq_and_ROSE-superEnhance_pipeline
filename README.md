@@ -58,3 +58,7 @@ step7:Super-Enhance annotation
 step8:Most suitable genen select
 ---
     python suitable_annotation_gene_select.py file_peak.select.clean.HQ_SuperEnhancers.annotate gene_exp.txt >> file_peak.select.clean.HQ_SuperEnhancers.annotate.suitable
+    
+cite
+----
+    Sun, Xiang et al. “Hippo-YAP signaling controls lineage differentiation of mouse embryonic stem cells through modulating the formation of super-enhancers.” Nucleic acids research vol. 48,13 (2020): 7182-7196.
